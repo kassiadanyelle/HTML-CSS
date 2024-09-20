@@ -1,0 +1,26 @@
+*{
+    font-family: 'Helvetica Neue';
+}
+body{
+    background-image: linear-gradient(to right,rgb(133, 128, 128),rgb(177, 174, 174) ,grey)
+}
+main{
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10 #fafafa;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+h1{ 
+    color: rgb(140,76,8);
+}
+h2{
+    color: rgb(140,76,8)
+}
+h3{
+    color: rgb(90, 49, 5);
+}
+p{text-align:justify;}
+li{text-align: justify;}
