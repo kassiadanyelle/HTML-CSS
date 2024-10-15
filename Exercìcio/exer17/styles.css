@@ -40,14 +40,13 @@ h1 {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    width: 200px; /* Largura fixa para os produtos */
+    width: 200px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .produto img {
-    width: 100%; /* Imagem do produto ocupa toda a largura do cartão */
-    height: auto; /* Mantém a proporção das imagens */
-}
+    width: 100%; 
+    height: auto;
 
 footer {
     text-align: center;
