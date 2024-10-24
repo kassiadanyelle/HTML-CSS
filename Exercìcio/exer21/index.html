@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table{
+            border-collapse: collapse;
+            color: rgb(5, 5, 155);
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+           
+        }
+        th,td{
+            border: 1px solid rgb(54, 86, 230);
+            padding: 10px;
+        }
+        h1{
+            font-size: 3.5em;
+            color: blue;
+        }
+        td{
+            color: rgb(2, 71, 201);
+        }
+        th{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>EXERCÍCIO DE TABELAS</h1>
+    <table>
+        <caption>
+            filmes favoritos
+        </caption>
+            <thead>
+            <tr>
+                <th scope="col">grupos</th>
+                <th scope="col">nomes</th>
+                <th colspan="3" scope="colgroup">filmes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            
+            <tr>
+                <th rowspan="3" scope="rowgroup">mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Vingadores</td>
+                <td>The Wind Rises</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>maria janyelle</td>
+                <td>oblivion</td>
+                <td>matrix</td>
+                <td>Big hero</td>
+            </tr>
+            <tr>
+                <th rowspan="5" scope="rowgroup">homens</th>
+                <td>caio douglas</td>
+                <td>wall-e</td>
+                <td>one piece</td>
+                <td>dragon ball</td>
+            </tr>
+            <tr>
+            <td>abimael monteiro</td>
+            <td> liga da justiça</td>
+            <td>coringa</td>
+            <td>Terrifier</td>
+            </tr>
+            <tr>
+                <td> venicius gabriel</td>
+                <td>homem aranha</td>
+                <td>cavalheiro da noite</td>
+                <td>Borderlands</td>
+            </tr>
+            <tr>
+                <td>leonardo feitosa</td>
+                <td>Dragon Ball Super: Super Hero</td>
+                <td>Man of Steel</td>
+                <td>Demon Slayer: Kimetsu no Yaiba </td>
+            </tr>
+            <tr>
+                <td>edilson conceição</td>
+                <td>deadpool</td>
+                <td>Rise of the Planet of the Apes</td>
+                <td>Guardians</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">total</th>
+                <th>1000</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
