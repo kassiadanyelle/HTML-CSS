@@ -1,0 +1,25 @@
+*{
+    font-family: 'Helvetica Neue';
+}
+
+img{
+    display: block;
+    margin: 20px auto ;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--cor1);
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+
+
+
+
+
+   

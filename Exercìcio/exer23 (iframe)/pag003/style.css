@@ -1,0 +1,21 @@
+* {
+    font-family:'courier Nex',Courier, monospace;
+} 
+body{ 
+    background-image: linear-gradient(to right ,#03C1CD,#0AB7D0,#12ADD2,#4b63e9,#1668e4);
+}
+main{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgb(0, 16, 156);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    h1{
+        color:#12ADD2
+    }
+    h2{
+        color:#4065E6
+    }
+    p{text-align: justify;}
+}
