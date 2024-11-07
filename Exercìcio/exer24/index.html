@@ -13,14 +13,21 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding: 20px;
         }
         .container {
             max-width: 1000px;
-            margin: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         h2 {
             margin-bottom: 10px;
+            text-align: center;
         }
         .filmes-grid {
             display: flex;
@@ -35,6 +42,11 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             flex-shrink: 0;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .filme-card:hover {
+            transform: scale(1.05);
         }
         .filme-card img {
             width: 100%;
@@ -45,6 +57,13 @@
             padding: 10px;
             font-size: 14px;
         }
+        iframe {
+            width: 120%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -52,27 +71,36 @@
 <div class="container">
     <h2>Principais Recomendações de Filmes</h2>
     <div class="filmes-grid">
-        <div class="filme-card">
+        <div class="filme-card" onclick="loadInfo('https://www.looke.com.br/filmes/somente-voce?srsltid=AfmBOorFUGK1GCZ-YNIvvy5Tq3u9ZZ8_flPl8TUV_7d1eBJAxBAQfwxA')">
+            <img src="imagens/Somente Você2.jpg" alt="Somente Você">
             <p>Somente Você</p>
         </div>
-        <div class="filme-card">
-            <img src="imagens/4704333.webp" alt="Filme 2"> 
+        <div class="filme-card" onclick="loadInfo('https://www.adorocinema.com/filmes/filme-260109/')">
+            <img src="imagens/O Retorno de Ben2.jpg" alt="O Retorno de Ben">
             <p>O Retorno de Ben</p>
         </div>
-        <div class="filme-card">
-            <img src="https://via.placeholder.com/150x200" alt="Filme 3">
+        <div class="filme-card" onclick="loadInfo('https://culturaalternativa.com.br/um-amor-do-passado/')">
+            <img src="imagens/Um Amor do Passado2.jpg" alt="Um Amor do Passado">
             <p>Um Amor do Passado</p>
         </div>
-        <div class="filme-card">
-            <img src="https://via.placeholder.com/150x200" alt="Filme 4">
-            <p>O Fabricante</p>
-        </div>
-        <div class="filme-card">
-            <img src="https://via.placeholder.com/150x200" alt="Filme 5">
+        <div class="filme-card" onclick="loadInfo('https://www.adorocinema.com/filmes/filme-254612/')">
+            <img src="imagens/Um Lugar Silencioso2.jpg" alt="Um Lugar Silencioso">
             <p>Um Lugar Silencioso</p>
         </div>
+        <div></div>
+        <div class="filme-card" onclick="loadInfo('https://www.looke.com.br/filmes/a-maldicao-do-titanic?srsltid=AfmBOop0WmVlMKtmNT6jAsr-VhKztkZSZ4YHWlGtnz9yr6gSqfBG3DUG')">
+            <img src="imagens/A Maldição do Titanic2.jpg" alt="A Maldição do Titanic">
+            <p>A Maldição do Titanic</p>
+        </div>   
     </div>
+    <iframe id="infoFrame" src="https://www.imdb.com/" title="Detalhes do Filme"></iframe>
 </div>
+
+<script>
+    function loadInfo(url) {
+        document.getElementById("infoFrame").src = url;
+    }
+</script>
 
 </body>
 </html>
