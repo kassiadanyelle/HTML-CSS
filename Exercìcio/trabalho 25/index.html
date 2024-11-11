@@ -5,65 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Showcase</title>
     <style>
-        /* Styles for the movie recommendation cards */
         .recommendations-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 22px;
             justify-content: center;
             padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .recommendations-container h1 {
-            width: 100%;
-            text-align: center;
+            background-color: #9c0808;
+            font-size: 38px;
+            font-family: 'Times New Roman', Times, serif;
+           
         }
         .card {
-            width: 150px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100px;
+            background-color: rgb(129, 7, 7);
+            box-shadow: 0 4px 8px rgba(233, 223, 223, 0.2);
             text-align: center;
             margin: 10px;
             padding: 10px;
-            border-radius: 8px;
+            border-radius: 80px;
             overflow: hidden;
         }
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        /* Styles for the new promo section */
         .promo-section {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 40px;
+            padding: 20px;
             background-color: #1c1c1c;
-            color: white;
+            color: rgb(100, 97, 97);
         }
         .promo-section .header {
             display: flex;
             justify-content: space-around;
             width: 100%;
-            max-width: 800px;
-            font-size: 14px;
+            max-width: 500px;
+            font-size: 17px;
             color: #bbbbbb;
         }
         .promo-section .header a {
             text-decoration: none;
             color: #bbbbbb;
-        }
-        .promo-section .promo-banner {
-            margin-top: 20px;
-            font-size: 12px;
-            color: #8f8f8f;
-        }
+        }     
         .promo-section .promo-title {
             font-size: 32px;
-            color: #81e075;
+            color: #4eca3e;
             margin: 20px 0;
         }
         .promo-section .offer {
@@ -85,11 +71,12 @@
             color: #8f8f8f;
             margin-top: 15px;
         }
+    
     </style>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             background-color: #f0f0f0;
             margin: 0;
             padding: 0;
@@ -147,34 +134,25 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 5;
         }
+        .titulo h1{
+            border-radius: 10%;
+        }
     </style>
 </head>
 <body>
     <div class="recommendations-container">
-        <h1>Movie Recommendations</h1>
-        <div class="card">
-            <img src="spiderman.jpg" alt="Spider-Man: across the spider-verse">
-            <p>Spider-Man: across the spider-verse</p>
-        </div>
-        <div class="card">
-            <img src="myhero.jpg" alt="My Hero Academia: You're Next">
-            <p>My Hero Academia: You're Next</p>
-        </div>
-        <!-- Repeat similar card elements for each movie recommendation -->
+        <h1>Pobreflix</h1>
+    
     </div>
-
-    <!-- New Promo Section -->
     <div class="promo-section">
         <div class="header">
 
             <a href="#">Início</a>
-            <a href="#">Filmes</a>
-            <a href="#">Séries</a>
+            <a href="https://www.looke.com.br/landingpage?gad_source=1&gclid=Cj0KCQiA88a5BhDPARIsAFj595jQt6bcpaGAp-0fiSJHQIfD_aBYZ0-_Giln3QnUsEvLwKGxiJRJKlAaApyREALw_wcB">Filmes</a>
+            <a href="https://www.netflix.com/br-en/browse/genre/83">Séries</a>
+            <a href="file:///C:/Users/SN00138407/Documents/GitHub/HTML-CSS/Exerc%C3%ACcio/trabalho%2025/poduz.html">localização de produção</a>
+            <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_pds_cpb_br_hk_s_g_mkw_stKmfBcpk-dc_pcrid_713585723449?gclid=Cj0KCQiA88a5BhDPARIsAFj595hb9KxTBSsHVVYCozP7VIo9THRiVhPZlsLvUGxhM0OWC7_DKvS1I0YaAqX3EALw_wcB&mrntrk=slid__pgrid_86022912466_pgeo_9213199_x__adext__ptid_kwd-12623861">site para assistir</a>
 
-        </div>
-        
-        <div class="promo-banner">
-            <img src="beetlejuice-promo.png" alt="Promo Banner" style="width: 60%; max-width: 400px;">
         </div>
 
         <h1 class="promo-title">Os Fantasmas Ainda se Divertem<br>BEETLEJUICE + BEETLEJUICE</h1>
@@ -191,9 +169,9 @@
             Disponível para alugar ou comprar
         </div>
 
-<h1>Movie Recommendations</h1>
+<h1>Filmes Recomendações</h1>
 <div class="container" id="movieContainer">
-    <!-- Movie Cards will be inserted here -->
+  
 </div>
 
 <div class="overlay" id="overlay" onclick="closeDescription()"></div>
@@ -205,7 +183,6 @@
 </div>
 
 <script>
-    // Array de exemplos de filmes com título, descrição, trailer e imagem
     const movies = [
         { 
             title: "Spider-Man: across the spider-verse", 
@@ -411,6 +388,6 @@
     // Renderiza os filmes na página
     renderMovies();
 </script>
-<img src="" alt="">
+
 </body>
 </html>
