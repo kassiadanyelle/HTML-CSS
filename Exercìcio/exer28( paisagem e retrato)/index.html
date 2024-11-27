@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Responsivo e Estiloso</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+</head>
+<body>
+    <h1>Preencha o Formulário</h1>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+        
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+        
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+        
+        <label for="tipo-trabalho">Tipo de Trabalho:</label>
+        <select id="tipo-trabalho" name="tipo-trabalho">
+            <option value="">Selecione uma opção</option>
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+        </select>
+        
+        <label for="descricao">Descrição do Trabalho:</label>
+        <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o trabalho"></textarea>
+        
+        <label for="arquivo">Envio de Arquivo (opcional):</label>
+        <input type="file" id="arquivo" name="arquivo">
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
