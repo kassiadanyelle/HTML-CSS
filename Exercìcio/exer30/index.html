@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanta - Promoção Épica CCXP 2024</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../exer30/imagens/PNC-logos29-04-2019.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(255, 102, 0, 0.8);
+            padding: 1rem 2rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+
+    
+
+        .form-container {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h2 {
+            margin-bottom: 1rem;
+            color: #ff6600;
+            text-align: center;
+        }
+
+        .form-container input,
+        .form-container button {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-container input {
+            background-color: #fff;
+        }
+
+        .form-container button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #cc5200;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .form-container {
+                width: 90%;
+                padding: 1rem;
+            }
+        }
+
+.carousel {
+    position: relative;
+    width: 200%;
+    max-width: 1000px;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Promoção Épica Fanta - CCXP 2024</h1>
+    </header>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="imagens/Fanta_Logo_Design2.webp" alt="Imagem 1">
+            <img src="imagens/Fanta_Logo_Design3.webp" alt="Imagem 2">
+            <img src="imagens/Fanta_Logo_Design4.webp" alt="Imagem 3">
+        </div>
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <div class="form-container">
+        <h2>Participe da Promoção</h2>
+        <form action="https://www.exemplo.com/promocao" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <input type="text" name="cpf" placeholder="Seu CPF" required>
+            <button type="submit">Participar</button>
+        </form>
+    </div>
+   
+
+</body>
+</html>
