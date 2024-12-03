@@ -1,0 +1,117 @@
+/* Reset */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgb(148, 148, 148);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Layout Principal */
+main {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    width: 90%;
+}
+
+/* Filtros */
+.filtros {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.filtros h2 {
+    margin-bottom: 10px;
+}
+
+.filtros ul {
+    list-style: none;
+}
+
+.filtros li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.filtros li:hover {
+    color: rgb(0, 123, 255);
+}
+
+/* Produtos */
+.produtos {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produtos h2 {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: rgb(255, 102, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: rgb(255, 81, 0);
+}
+
+/* Rodapé */
+footer {
+    background: rgb(148, 148, 148);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    width: 100%;
+}
