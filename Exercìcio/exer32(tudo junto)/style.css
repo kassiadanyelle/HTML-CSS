@@ -1,73 +1,255 @@
-/* Estilos Gerais */
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset Básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-/* Header e Navegação */
-header {
-    background-color: #0073e6;
-    padding: 1rem;
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f0f0f0;
+    color: #333;
 }
 
-header nav ul {
+/* Navegação */
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    list-style-type: none;
+    background-color: #333;
+    padding: 10px 0;
 }
 
-header nav ul li {
+nav ul li {
     margin: 0 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-/* Hero Section */
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Hero Section com Parallax */
 .hero {
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    height: 100vh;
+    background: url('image.jpg') center/cover no-repeat;
+    background-attachment: fixed;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px 0;
+    padding: 0 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .hero p {
     font-size: 1.5rem;
+    animation: fadeIn 2s ease-in-out 0.5s;
 }
 
-/* Parallax Effect */
-.parallax {
-    background-image: url('https://via.placeholder.com/1920x1080');
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Galeria */
+.galeria {
+    padding: 50px;
     text-align: center;
-    padding: 100px 0;
 }
 
-/* Tabela */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow}
+
+    /* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Formulário de Contato */
+#contato {
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contato p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Tabela de Cidades */
+.cidades {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 50px auto;
+}
+
+.cidades h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cidades p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+table th, table td {
+    padding: 15px;
     text-align: left;
+    border: 1px solid #ddd;
 }
 
-th, td {
-    padding}
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    #contato {
+        padding: 20px;
+    }
+
+    .cidades {
+        padding: 20px;
+    }
+}
