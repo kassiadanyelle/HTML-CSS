@@ -127,8 +127,37 @@
         @charset "UTF-8";
 
 body {
-    background-image: url("");
+    background-image: url("imagens/Cidade_Maravilhosa.jpg");
     background-position: left bottom;
+}
+
+.container-botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; 
+}
+
+.btn-voltar {
+  display: inline-block;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-voltar:hover {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  transform: scale(1.05);
+}
+
+.btn-voltar:active {
+  transform: scale(0.95);
 }
     </style>
 </head>
@@ -170,5 +199,8 @@ body {
     <div id="mapa-container">
         <iframe id="mapa" name="mapa" src="https://www.google.com/maps?q=S%C3%A3o+Paulo" title="Mapa de Destino"></iframe>
     </div>
+    <div class="container-botao">
+        <a href="index.html" class="btn-voltar">Voltar ao Início</a>
+      </div>
 </body>
 </html>
